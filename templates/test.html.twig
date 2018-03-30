@@ -1,0 +1,46 @@
+{% extends "blade.html.twig" %}
+{% block body %}
+    <div class="container card">
+        <div class="row">
+            <div class="col-md-12 ">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>
+                            <h2>Nume</h2>
+                        </th>
+                        <th>
+                            <h2>Prenume</h2>
+                        </th>
+                        <th>
+                            <h2>Adresa</h2>
+                        </th>
+                        <th>
+                            <h2>Oras</h2>
+                        </th>
+                        <th>
+                            <h2>Email</h2>
+                        </th>
+                        <th>
+                            <h2>Sex</h2>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for human in humans %}
+                        <tr>
+                            <td>{{ human.nume }}</td>
+                            <td>{{ human.prenume }}</td>
+                            <td>{{ human.adresa }}</td>
+                            <td>{{ human.oras }}</td>
+                            <td>{{ human.email }}</td>
+                            <td>{{ human.sex }}</td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "blade.html.twig" %}
+{% block body %}
+    <h2>Date Personale</h2>
+    <div class="container card">
+        <div class="row">
+            <div class="col-md-12 ">
+                {{ form_start(form, {attr: {novalidate: 'novalidate', id:'createDomo'}}) }}
+                {{ form_label(form.Nume) }}
+                {{ form_widget(form.Nume) }}
+                {{ form_label(form.Email) }}
+                {{ form_widget(form.Email) }}
+                {{ form_label(form.Prenume) }}
+                {{ form_widget(form.Prenume) }}
+                {{ form_label(form.Adresare) }}
+                {{ form_widget(form.Adresare) }}
+                {{ form_widget(form.Parola) }}
+                {{ form_label(form.Telefon) }}
+                {{ form_widget(form.Telefon) }}
+                {{ form_label(form.Adresa) }}
+                {{ form_widget(form.Adresa) }}
+                {{ form_label(form.counties) }}
+                {{ form_widget(form.counties) }}
+                {{ form_label(form.cities) }}
+                {{ form_widget(form.cities) }}
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

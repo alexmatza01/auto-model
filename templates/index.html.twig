@@ -1,0 +1,54 @@
+{% extends "blade.html.twig" %}
+{% block body %}
+    <div class="container card">
+        <div class="row">
+            <div class="col-md-12 ">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>
+                            <h2>Nume</h2>
+                        </th>
+                        <th>
+                            <h2>Prenume</h2>
+                        </th>
+                        <th>
+                            <h2>Adresa</h2>
+                        </th>
+                        <th>
+                            <h2>Telefon</h2>
+                        </th>
+                        <th>
+                            <h2>Judet</h2>
+                        </th>
+                        <th>
+                            <h2>Localitate</h2>
+                        </th>
+                        <th>
+                            <h2>Email</h2>
+                        </th>
+                        <th>
+                            <h2>Forma de adresare</h2>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for ion in person %}
+                        <tr>
+                            <td>{{ ion.nume }}</td>
+                            <td>{{ ion.prenume }}</td>
+                            <td>{{ ion.adresa }}</td>
+                            <td>{{ ion.telefon }}</td>
+                            <td>{{ ion.counties.name }}</td>
+                            <td>{{ ion.cities.name }}</td>
+                            <td>{{ ion.email }}</td>
+                            <td>{{ ion.adresare }}</td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

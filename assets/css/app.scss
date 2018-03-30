@@ -1,0 +1,26 @@
+h2 {
+  text-align: center;
+}
+form, .card {
+  padding: 25px;
+}
+
+.error {
+  color: red;
+  margin-left: 205px;
+}
+//
+//.form-group {
+//  width: 50%;
+//  float: left;
+//}
+//
+.form-group:nth-child(8) {
+  width: 100%;
+}
+//.col-form-label {
+//  font-size: 15px;
+//}
+//.form-group:nth-child(8) > .col-form-label.col-sm-1 {
+//  background: red;
+//}
