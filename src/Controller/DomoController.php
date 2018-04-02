@@ -8,8 +8,8 @@
 
 namespace App\Controller;
 
-use App\Form\Type\DomoType;
-use App\Entity\Domo;
+use Interactions\FormBundle\Form\Type\DomoType;
+use Interactions\FormBundle\Entity\Domo;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
